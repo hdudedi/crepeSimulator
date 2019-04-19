@@ -1,0 +1,27 @@
+= Reminder to compile using compiling tools
+
+
+Let us suppose you have a command line opened in the directory 01_minimal_window/
+
+== Using CMake (in command line)
+
+$ cd cmake
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ cd ../..
+$ cmake/build/pgm
+
+(note: the build directory is temporary and can be removed safely)
+
+
+== Using CMake (with QtCreator)
+
+$ qtcreator cmake/CMakeLists.txt &
+
+Then follow the configuration steps from the GUI.
+
+By default, a temporary directory build-cmake-Desktop-Default is created (in the parent directory of CMakeLists.txt file), as well as a file CMakeLists.txt.user (same directory than CMakeLists.txt file). Both can be removed safely.
+
+
